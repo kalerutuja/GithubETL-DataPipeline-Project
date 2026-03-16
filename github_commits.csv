@@ -1,0 +1,556 @@
+sha,author,date,message
+9996ada61122ac971c52e300dd072d0574f437d8,Dillon Sharlet,2026-03-16 20:41:43+00:00,"Fix tests incorrectly checking for allocation type when the allocation is delegated
+
+PiperOrigin-RevId: 884614841"
+91f0b5e679af9c2a7fde023208e8a928a8768624,dependabot[bot],2026-03-16 20:07:01+00:00,"PR #39041: Bump actions/upload-artifact from 6.0.0 to 7.0.0
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/39041
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 6.0.0 to 7.0.0.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href=""https://github.com/actions/upload-artifact/releases"">actions/upload-artifact's releases</a>.</em></p>
+<blockquote>
+<h2>v7.0.0</h2>
+<h2>v7 What's new</h2>
+<h3>Direct Uploads</h3>
+<p>Adds support for uploading single files directly (unzipped). Callers can set the new <code>archive</code> parameter to <code>false</code> to skip zipping the file during upload. Right now, we only support single files. The action will fail if the glob passed resolves to multiple files. The <code>name</code> parameter is also ignored with this setting. Instead, the name of the artifact will be the name of the uploaded file.</p>
+<h3>ESM</h3>
+<p>To support new versions of the <code>@actions/*</code> packages, we've upgraded the package to ESM.</p>
+<h2>What's Changed</h2>
+<ul>
+<li>Add proxy integration test by <a href=""https://github.com/Link""><code>@​Link</code></a>- in <a href=""https://redirect.github.com/actions/upload-artifact/pull/754"">actions/upload-artifact#754</a></li>
+<li>Upgrade the module to ESM and bump dependencies by <a href=""https://github.com/danwkennedy""><code>@​danwkennedy</code></a> in <a href=""https://redirect.github.com/actions/upload-artifact/pull/762"">actions/upload-artifact#762</a></li>
+<li>Support direct file uploads by <a href=""https://github.com/danwkennedy""><code>@​danwkennedy</code></a> in <a href=""https://redirect.github.com/actions/upload-artifact/pull/764"">actions/upload-artifact#764</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li><a href=""https://github.com/Link""><code>@​Link</code></a>- made their first contribution in <a href=""https://redirect.github.com/actions/upload-artifact/pull/754"">actions/upload-artifact#754</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href=""https://github.com/actions/upload-artifact/compare/v6...v7.0.0"">https://github.com/actions/upload-artifact/compare/v6...v7.0.0</a></p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href=""https://github.com/actions/upload-artifact/commit/bbbca2ddaa5d8feaa63e36b76fdaad77386f024f""><code>bbbca2d</code></a> Support direct file uploads (<a href=""https://redirect.github.com/actions/upload-artifact/issues/764"">#764</a>)</li>
+<li><a href=""https://github.com/actions/upload-artifact/commit/589182c5a4cec8920b8c1bce3e2fab1c97a02296""><code>589182c</code></a> Upgrade the module to ESM and bump dependencies (<a href=""https://redirect.github.com/actions/upload-artifact/issues/762"">#762</a>)</li>
+<li><a href=""https://github.com/actions/upload-artifact/commit/47309c993abb98030a35d55ef7ff34b7fa1074b5""><code>47309c9</code></a> Merge pull request <a href=""https://redirect.github.com/actions/upload-artifact/issues/754"">#754</a> from actions/Link-/add-proxy-integration-tests</li>
+<li><a href=""https://github.com/actions/upload-artifact/commit/02a8460834e70dab0ce194c64360c59dc1475ef0""><code>02a8460</code></a> Add proxy integration test</li>
+<li>See full diff in <a href=""https://github.com/actions/upload-artifact/compare/b7c566a772e6b6bfb58ed0dc250532a479d7789f...bbbca2ddaa5d8feaa63e36b76fdaad77386f024f"">compare view</a></li>
+</ul>
+</details>
+<br />
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=actions/upload-artifact&package-manager=github_actions&previous-version=6.0.0&new-version=7.0.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+
+</details>
+Copybara import of the project:
+
+--
+1b6408e509a0504f100941f567785fb37b1db48b by dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>:
+
+Bump actions/upload-artifact from 6.0.0 to 7.0.0
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 6.0.0 to 7.0.0.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/b7c566a772e6b6bfb58ed0dc250532a479d7789f...bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-version: 7.0.0
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Merging this change closes #39041
+
+PiperOrigin-RevId: 884600137"
+f7696333d744546f9c7e7d21b9988366192def64,Parker Schuh,2026-03-16 20:06:28+00:00,"Add support for atomic speculative scheduling to worker_thread.{cc,h}.
+
+PiperOrigin-RevId: 884599883"
+70e0cfd9361fa6d539b6be0baed6889e8f24adf0,Dillon Sharlet,2026-03-16 19:59:35+00:00,"Don't handle concatenate ops that add new dimensions
+
+This case currently fails in XNNPACK, so this should not break any existing use case.
+
+PiperOrigin-RevId: 884596850"
+18772f01e589c3a23169f7d785a0d09531f0e3a2,Enver Kayaaslan,2026-03-16 19:55:05+00:00,"Introduce UnflattenCallGraph pass after shardy outlining.
+
+It is a literal no-op at the moment.
+
+PiperOrigin-RevId: 884594714"
+46a19ab70d4d0008b455ff2eaf5c564a44bee375,Junwhan Ahn,2026-03-16 19:45:41+00:00,"Rollback due to internal breakage
+
+Reverts 6d086c3727e39f0702016791c81386b93b4d7b2f
+
+PiperOrigin-RevId: 884590646"
+2ec03b5513e641bf99450f305503c2188518dc38,Kingston Mandisodza,2026-03-16 19:40:30+00:00,"Add NamedSharding support to GetAllToAllSharding.
+
+PiperOrigin-RevId: 884588354"
+da1b60beb415211263748ba44021921876192556,Dillon Sharlet,2026-03-16 19:06:20+00:00,"Remove use_simple_allocator arguments to BuildInterpreter
+
+This is unused.
+
+PiperOrigin-RevId: 884571632"
+874e2b25c190a718c4e02d0a5649b35fc297cff7,A. Unique TensorFlower,2026-03-16 18:45:31+00:00,"Try to get the default config in cudnn backend.
+
+PiperOrigin-RevId: 884560877"
+4297bef3c7cf6ee3a4ad16ff7e89ebfc7e386208,Eugene Zhulenev,2026-03-16 18:44:20+00:00,"PR #38921: [xla] Add Bant macro expansions for XLA test targets
+
+This allows buildcleaner-like analysis of XLA tests to detect missing dependencies.
+
+This closes https://github.com/openxla/xla/pull/38921.
+
+PiperOrigin-RevId: 884560380"
+3a33294e1e4a3e61c9326ce97f605933827d390a,Shawn Lu,2026-03-16 18:43:10+00:00,"Avoid holding mutex while awaiting future in IfrtRestoreTensorRegistry::GetDtypeAndShape.
+
+PiperOrigin-RevId: 884559833"
+8cff0a4b3fbac30cabbc55048da4b8b349145d55,Robert Dyro,2026-03-16 18:19:11+00:00,"Fix OptimizeDotOfConcatHelper crash on non-2D operands
+
+PiperOrigin-RevId: 884547521"
+5aea7df677f862007b6714095ae371d501b2b52f,Enver Kayaaslan,2026-03-16 18:18:22+00:00,"Avoid having the same funcs with different tensor types on unit tests for exporting named computations.
+
+It is not reasonable to expect functions with different tensor types originated from the same function.
+
+PiperOrigin-RevId: 884547032"
+9069134a808ced98e6b2d4aecdfb037edfffd84d,Christian Sigg,2026-03-16 18:08:39+00:00,"Add a batched scan kernel, processing one batch per block.
+
+Instantiates one kernel per type, op (currently only sum), and gpu architecture. The binary target containing all kernels (libcub_scan_kernel_cuda_impl.a) is 187kB big.
+
+PiperOrigin-RevId: 884541176"
+818b54feb22863cd8c64428ae8372dba638c1963,A. Unique TensorFlower,2026-03-16 17:48:53+00:00,"Allow force async delay with priority.
+
+PiperOrigin-RevId: 884528693"
+7390211b976416acd447b59186340fb1453619b5,Matej Aleksandrov,2026-03-16 17:46:20+00:00,"Update ast usage to support Python 3.14
+
+PiperOrigin-RevId: 884527073"
+6d086c3727e39f0702016791c81386b93b4d7b2f,Junwhan Ahn,2026-03-16 17:24:35+00:00,"Further optimize the `ifrt_merge_reshards` pass
+
+The current implementation of reshard merging requires reshard ops to share the same ""first user"" since this is used as a proxy to dominance order. However, this algorithm cannot merge two completely parallel chains of transfers that do not have the common first-user op, which may happen if two arguments are used by two different computations on the same submesh.
+
+This CL fixes the problem by making the algorithm more permissive when choosing reshard groups. Specifically, after picking the first reshard op in the block as a candidate, it now considers all compatible reshard ops that are before the first user of the candidate reshard op. While this is a bit more expensive to calculate, this will be more effective at batching copy operations.
+
+The newly added test case demonstrates the improvement. The previous algorithm fails to merge any reshard ops in the test program, whereas the new algorithm achieves the maximum possible merging.
+
+PiperOrigin-RevId: 884514015"
+bc8051a5acc04989082c47867a4aebf3a920abc1,Enver Kayaaslan,2026-03-16 16:56:10+00:00,"Drop redundant CallOp parameter from getFuncResultSharding.
+
+PiperOrigin-RevId: 884497201"
+2dd9641f9e601a08b453185293a9acdb4b086de6,A. Unique TensorFlower,2026-03-16 16:51:16+00:00,"Reverts 45c56fdeb51680441034e4e278db399ffc12c2bc
+
+PiperOrigin-RevId: 884493988"
+9dcb20809e6a845344ed8e81287d214d60bc3fbf,Alexander Belyaev,2026-03-16 16:45:13+00:00,"[XLA:GPU] Fix the scatter_slice_simplifier pass.
+
+The check for the update_dimensions was incorrect and worked out of luck, mostly, because there was almost always a transpose inserted between scatter and the following slice.
+
+This pattern should be moved to the GpuAlgebraicSimplfier or some pass that bubbles-up the slice ops.
+
+Also the condition for the updates tensor can be relaxed as mentioned in the comment to the code.
+
+PiperOrigin-RevId: 884490635"
+deec275705a219067ed58ebf1ea77ef5289ef5bf,Emily Fertig,2026-03-16 16:38:39+00:00,"Handle unreduced axes and subgroups when converting between ShardingParam and HloSharding.
+
+PiperOrigin-RevId: 884487065"
+5759dcd74b9e69de0c31dccd34271a8616735aca,A. Unique TensorFlower,2026-03-16 15:58:12+00:00,"Not needed - is a roll back
+
+Reverts 0dfbd5921a415140ee29a44bdee33230f4cd2f3c
+
+PiperOrigin-RevId: 884465250"
+d9616ce2034ca86487862d48df55c4c52d48238e,Enver Kayaaslan,2026-03-16 15:56:29+00:00,"Move getFuncArgShardings to xla shardy utils.
+
+PiperOrigin-RevId: 884464371"
+30de4c10e5093719188ebed9ea3f018c1d728e00,Dirk Hornung,2026-03-16 15:55:14+00:00,"[CublasLt] Disable Cublaslt algorithm 3 which is numerical unstable for complex numbers.
+
+PiperOrigin-RevId: 884463844"
+74111e901641d84e529838406653d861ff03b94c,A. Unique TensorFlower,2026-03-16 15:49:39+00:00,"Integrate LLVM at llvm/llvm-project@bcdf3c930b8b
+
+Updates LLVM usage to match
+[bcdf3c930b8b](https://github.com/llvm/llvm-project/commit/bcdf3c930b8b)
+
+PiperOrigin-RevId: 884461336"
+77bdaca060e1c57642baf4fe21d6613f1a8b0109,Enver Kayaaslan,2026-03-16 15:11:25+00:00,"Drop redundant CallOp parameter from getFuncArgShardings.
+
+PiperOrigin-RevId: 884444572"
+855a55821abc6478f5fd0c5d34ce0a7a7066fa0d,Michael Goldfarb,2026-03-16 14:33:32+00:00,"PR #39155: Fix UB in FFI State Get/Set Backwards Compatibility Case
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/39155
+
+📝 Summary of Changes
+Replaces `reinterpret_cast` with `std::memcpy` to avoid U.B.
+Implementation of Get_State was not setting state pointer when using the backward compatibility path
+
+🎯 Justification
+Support state with V0.2 FFI in latest JAX.
+
+🚀 Kind of Contribution
+ 🐛 Bug Fix
+
+Copybara import of the project:
+
+--
+b0bed02a0aa43ff92219ba2b1aa4ddf64306e1ca by Michael Goldfarb <mgoldfarb@nvidia.com>:
+
+Fix UB in state get/set when using backwards compat mode.
+Also fixes the implementation to correctly set the state.
+
+--
+d18d5b6bc35632fe2984021f43d9b1414d4c7c3b by Michael Goldfarb <mgoldfarb@nvidia.com>:
+
+Fix write to state.
+
+Merging this change closes #39155
+
+PiperOrigin-RevId: 884428841"
+7f6da9d14ab89d071562952aea17b8d54c6f27e9,Xuefei Jiang,2026-03-16 14:16:09+00:00,"PR #38333: [ROCm] dev scaled dot for rocm
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/38333
+
+In this PR, we implemented scaled dot (`kScaledDot`) for the ROCm platform via hipBLASLt.
+
+### Key Changes
+- `HipblasLtBackend` in `Autotuner` recognizes `kScaledDot` and rewrites the fusion into a `__cublas$lt$matmul$mx` custom call.
+- Added supporting infrastructure for `__cublas$lt$matmul$mx`, e.g., thunk emission, hipBLASLt changes.
+-  Added `ScaleMode` to `GemmConfig` so hipBLASLt can set the correct scale attributes during algorithm search, because fp8 dot and scaled dot cannot be distinguished from data types alone.
+
+### Testing
+- `//xla/backends/gpu/autotuner:hipblaslt_test`
+- `//xla/backends/gpu/autotuner:hipblaslt_mx_execution_test`
+Copybara import of the project:
+
+--
+981b89448b9e18ba84ca2f4235b94063883b4987 by scxfjiang <xuefei.jiang@amd.com>:
+
+dev scaled dot for rocm
+
+--
+1cad7566ffd5d8b70bbb9cee20df63b8cf5dd34c by scxfjiang <xuefei.jiang@amd.com>:
+
+update according to review
+
+--
+8bcad3b72e67c1784202d0b7d4f5e5be6b6ee116 by scxfjiang <xuefei.jiang@amd.com>:
+
+revert GetDefaultConfig
+
+--
+6f91e33616429b9a7213a0364b98c24b3c0442d0 by Xuefei Jiang <xuefei.jiang@amd.com>:
+
+replace mx_mode with scale_mode (#651)
+
+--
+a8580be0654c3a414317d24a5d283fd02866f633 by scxfjiang <xuefei.jiang@amd.com>:
+
+format
+
+--
+1e475a1b3e86ab7abf7616d42b6ff27d194a740d by scxfjiang <xuefei.jiang@amd.com>:
+
+skip mx runtime tests for archs without mx support
+
+--
+f220b85b51d0fccfa6e34b7999bc856ec83368cd by scxfjiang <xuefei.jiang@amd.com>:
+
+narrow down the range for float4_e2m1fn in unit test
+
+--
+c0184b9a5843a57850eef1bff48d9269f6c24b05 by scxfjiang <xuefei.jiang@amd.com>:
+
+Remove unnecessary static_cast in thunk_emitter.cc
+
+--
+2237421fffb0ee861ec15be527c36541e72a2911 by scxfjiang <sc.xfjiang@gmail.com>:
+
+resotre value range for unit test
+
+--
+2438b7805be575a2c7bc087e505b714f7381577d by scxfjiang <sc.xfjiang@gmail.com>:
+
+fix build and clean up
+
+Merging this change closes #38333
+
+PiperOrigin-RevId: 884421453"
+13b4683d82de60aad171eb372de29b53eebbd58e,Eugene Zhulenev,2026-03-16 14:12:10+00:00,"PR #38689: [xla] Update xla::concurrency package to use standard concurrency primitives
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/38689
+
+Use standard `xla::Future` and `tsl::Executor` to implement parallel `ForEach` for HLO computations.
+
+Deprecate `TskTaskExecutor`, as all users should prefer the default one which respects the `NPROC` env variable used everywhere in XLA to control the number of threads.
+Copybara import of the project:
+
+--
+d513972368dcc9921c70c380583cff58f5262ee2 by Eugene Zhulenev <ezhulenev@openxla.org>:
+
+[xla] Update xla::concurrency package to use standard concurrency primitives
+
+Merging this change closes #38689
+
+PiperOrigin-RevId: 884419766"
+81596be86e3b14e5fa5609bc47d65b38cc21cc06,Theotime Combes,2026-03-16 13:55:07+00:00,"[XLA:GPU] Add runtime driver version checks for CUDA graph features.
+
+PiperOrigin-RevId: 884413217"
+f3bd36fbef40d7c3c987a0bdab090d50c7c4cfbe,Eetu Sjöblom,2026-03-16 13:29:35+00:00,"PR #38258: [ROCm] Add hipBLASLt GEMM TF32 support
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/38258
+
+📝 Summary of Changes
+Add support for TF32 computation type on ROCm
+
+🚀 Kind of Contribution
+✨ New Feature
+Copybara import of the project:
+
+--
+28d58593a2fc790f7381ad3382aabfe7e4be9224 by Eetu Sjöblom <eetu.sjoblom@amd.com>:
+
+Add hipBLASLt GEMM TF32 support
+
+Merging this change closes #38258
+
+PiperOrigin-RevId: 884403856"
+c97fe3a9fd94dd625b893d2862748dc559ae5638,Eusebio Durán Montaña,2026-03-16 13:01:16+00:00,"Don't serialize module_id in split GPU executable
+
+We don't actually use it during deserialization, and its causing non-determinism for Waymo. The id is populated by a static counter during deserialization.
+
+PiperOrigin-RevId: 884393211"
+806ad04ffc89baed30765355a25f3b37d6e3e031,A. Unique TensorFlower,2026-03-16 13:00:24+00:00,"Remove DeviceConfig and DevicelessConfig.
+
+PiperOrigin-RevId: 884392914"
+1a54a1aa529a47f8aaff2fe2e49e32b415436238,A. Unique TensorFlower,2026-03-16 12:14:00+00:00,"Fix AOT compiler to allow for deterministic serialization.
+
+PiperOrigin-RevId: 884376900"
+1fb85c84bf346015d54b2d05ca33ec924a310afd,Eugene Zhulenev,2026-03-16 11:45:33+00:00,"PR #39083: [xla:gpu] Remove CubSortThunk and invoke FFI custom calls directly
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/39083
+
+Remove `CubSortThunk;` emit CUB sort as generic FFI custom call
+
+Simplify CUB sort infrastructure by removing the specialized `CubSortThunk` and instead emitting `CUB` sort operations as generic `FFI `custom calls handled by `CustomCallThunk`. This eliminates a dedicated thunk type in favor of the existing `FFI` handler framework, which is already powerful enough to support scratch buffer computation (via instantiate stage) and runtime dispatch. Also don't abuse passing a pointer via attributes to get scratch size, use proper state mechanism.
+
+####  Key changes:
+  - Consolidate ~30 per-type FFI handler registrations into two single handlers (`xla.gpu.ext.cub_sort_keys` and `xla.gpu.ext.cub_sort_pairs`) with runtime type dispatch via `AnyBuffer::element_type()`
+  - Sort rewriter emits `API_VERSION_TYPED_FFI` custom calls with MLIR dict backend config (`descending`, `batch_size` attributes)
+  - `EstimateCubScratchSize` pass invokes FFI instantiate handler directly to compute scratch buffer size
+  - `Delete CubSortThunk`, its proto, tests, and thunk kind enum entry
+  - Fix `TypeRegistry::GetTypeId<T>()` to use `GetOrAssignTypeId` instead of `AssignTypeId`, preventing type ID conflicts when FFI handlers and direct `ExecutionState` access register the same type
+  - Add segment offset copying in FFI execute handlers for batched sort
+  - Add all int32_t key pair instantiations (s32_b16, s32_b32, s32_b64) for completeness
+
+This approach is better than creating a custom thunk for each extension operation because FFI custom calls already provide all needed runtime capabilities: instantiate stage for scratch size computation, typed buffer access, attribute passing, and stream management via CustomCallThunk.
+Copybara import of the project:
+
+--
+ec7653b7135dc53f9d30d281e999e0619729942f by Eugene Zhulenev <ezhulenev@openxla.org>:
+
+[xla:gpu] Delete CubSortThunk and invoke FFI custom calls directly
+
+Merging this change closes #39083
+
+PiperOrigin-RevId: 884366589"
+0dfbd5921a415140ee29a44bdee33230f4cd2f3c,Henning Becker,2026-03-16 11:31:18+00:00,"Handle cross compilation in StreamExecutorGpuPjRtCompiler
+
+This change adds support for what we call cross compilation to XLA:GPU's
+implementation of PjRtCompiler. Cross compilation means we were asked
+to compile for a given GPU target config while also having a sample
+GPU available for autotuning.
+
+So the logic is the following:
+
+1. If only a GPU target config is provided, we do deviceless
+   compilation. (No change here.)
+2. If only a PjRtClient (think as access to a GPU) is provided, we do
+   JIT compilation. (No change here.)
+3. If both a PjRtClient and a GPU target config is provided, we do
+   cross compilation. (Was previously ignoring the target config and
+   performing JIT compilation.)
+
+Some drive-by fixes in the same file:
+- Removed unused function
+- Deduplicated logic by implemented `IsGpuClient` in terms of `IsGpuId`.
+
+PiperOrigin-RevId: 884360469"
+26f987fb1da486e91375df5e2093ed72c80d1306,A. Unique TensorFlower,2026-03-16 10:26:23+00:00,"Refactor SymbolicMap variable replacement and dimension adjustments
+
+We have some failing tests in IndexingMap::GetAffineMap() migration to GetSymbolicMap(). After some debugging, I found out the issue relies in SymbolicMap::Replace() method. Similar to AffineMap similar one, it allowed to change the number of dimensions and symbols. But this is a problem in SymbolicMap that results in different bugs since all are mapped to the same kVariable data type.
+
+After some discussions, we decided to not allow SymbolicMap::Replace() to modify the number of dimensions and symbols and instead provide a different method for that (SetNumDimensions). I will create SetNumSymbols if needed in the future.
+
+PiperOrigin-RevId: 884335317"
+bfd5a1b19ca97d792336968f9701ff8eea4414e2,Pavel Emeliyanenko,2026-03-16 10:22:08+00:00,"PR #38802: [ROCM] improving RunAndCompareThreeIterations in command_buffer_test
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/38802
+
+📝 Summary of Changes
+Rewirting RunAndCompareThreeIterations function
+
+🎯 Justification
+The above function clones input literals with the idea that this will cause command buffer updates but this does not really happen.
+The point is, the function [ExecuteWithExecutable](https://github.com/openxla/xla/blob/5e9258842fe13c6c155684d7263604d3d2963380/xla/service/hlo_runner_pjrt.cc#L509-L512) creates and destroys device buffers on every call, hence just cloning the input literals won't help to force command buffer update. This is because BFC allocator used by PJRT runner would likely to allocate device buffers on exact same locations as before. So, I had to rewrite this function to really keep 2 sets of input arguments allocated at the same time.
+Though, to get it working I had to use a small hack to [downcast runner pointer](https://github.com/openxla/xla/blob/5e9258842fe13c6c155684d7263604d3d2963380/xla/service/gpu/tests/command_buffer_test.cc#L157) to HloRunnerPjRt type..
+
+🚀 Kind of Contribution
+ 🧪 Tests
+
+Extracted as a separate PR from https://github.com/openxla/xla/pull/34572
+
+Copybara import of the project:
+
+--
+995857b2327c8e57f964662d4a72f987521ec1b0 by Pavel Emeliyanenko <pavel.emeliyanenko@amd.com>:
+
+refactoring command buffer test
+
+--
+879044bcc45c56f6010f737d65a2b06ed8089b3b by Pavel Emeliyanenko <pavel.emeliyanenko@amd.com>:
+
+addressed reviewer comments
+
+--
+7bd7586df02273cb60aeb4b9a035259b0fb4b276 by Pavel Emeliyanenko <pavel.emeliyanenko@amd.com>:
+
+remaining small fixes
+
+--
+5ddfd9a021ae1ae9f18ac568634e44fecdc0619b by Pavel Emeliyanenko <pavel.emeliyanenko@amd.com>:
+
+adding the build dep
+
+Merging this change closes #38802
+
+PiperOrigin-RevId: 884333786"
+8eda13976247ddfbd9b8981e223057d6e0d323a7,Sean Talts,2026-03-16 10:20:08+00:00,"[XLA:CPU] Add bufferization tests for xtile.extract.
+
+These tests cover bufferization of `xtile.extract` with dynamic offsets (leading to `scf.if` for full/partial tiles) and static offsets (direct `memref.subview` and `memref.copy`), including multi-dimensional shapes.
+
+PiperOrigin-RevId: 884333149"
+9f246d8f58e68e50a6231466fb4a583317c6aaa2,A. Unique TensorFlower,2026-03-16 10:15:37+00:00,"[XLA:GPU] Rollback scatter simplfier changes.
+
+Reverts d303f6b5443c82146be4b5082e8bdc6323c82320
+
+PiperOrigin-RevId: 884331514"
+b51b01dd4b00a8340e955a1ce0d63414ab8d17fc,Eetu Sjöblom,2026-03-16 09:43:17+00:00,"PR #38792: [ROCm] Enable rocBLAS/hipBLASLt fission backends in autotuner
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/38792
+
+Enable FissionBackend autotuning for ROCm (rocBLAS + hipBLASLt)
+
+- Added HIPBLASLT_FISSION to backend proto
+- Updated factory_rocm.cc to register the backends
+- xla_gpu_experimental_disabe_binary_libraries, xla_gpu_enable_cublaslt behavior mirror CUDA
+
+Also minor fix: removed dead return in fission_backend.cc
+
+🚀 Kind of Contribution
+✨ New Feature
+
+Copybara import of the project:
+
+--
+ad88d8c26c732824978762a9821de8066d560d61 by Eetu Sjöblom <eetu.sjoblom@amd.com>:
+
+Enable rocblas/hipBLASLt fission on ROCm
+
+Merging this change closes #38792
+
+PiperOrigin-RevId: 884317138"
+4a94365a521c8f77a4b718b91cecbd7049c0e3fe,Akhil Goel,2026-03-16 09:40:52+00:00,"PR #34420: [XLA:CPU][oneDNN] Add weight prepacking for oneDNN convolutions
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/34420
+
+This PR introduces weight prepacking for oneDNN convolutions. With this PR, oneDNN convolutions have full functional feature parity with oneDNN matmuls.
+Copybara import of the project:
+
+--
+9e9fb9595dceb27af06c2642d96a4ad344f75543 by Akhil Goel <akhil.goel@intel.com>:
+
+Add convolution weight prepacking support
+
+--
+ec6cd08240dec6797f44bcb190ae8014789273a0 by Akhil Goel <akhil.goel@intel.com>:
+
+Address review comments
+
+--
+52127c6c87c2ee274197fe97c0ea3f1b91420263 by Akhil Goel <akhil.goel@intel.com>:
+
+Address comment
+
+--
+cb5316b0622144223ea3e7511312270b5e095470 by Akhil Goel <akhil.goel@intel.com>:
+
+Fix dangling reference
+
+Merging this change closes #34420
+
+PiperOrigin-RevId: 884316029"
+45c56fdeb51680441034e4e278db399ffc12c2bc,Sohaib Iftikhar,2026-03-16 09:02:06+00:00,"[XLA:GPU]: Flip xla_gpu_unsupported_use_all_reduce_one_shot_kernel to true by default.
+
+PiperOrigin-RevId: 884298871"
+96520e6d27dcef1793945b3ea164278cafe4e3d6,Christian Sigg,2026-03-16 08:58:39+00:00,"Refactor GPU sum scan to use FFI custom calls
+
+This change replaces CubScanThunk with an XLA FFI custom call xla.gpu.ext.cub_scan, which lowers to cub::DeviceScan::InclusiveSum.
+
+The ScanRewriter pass is updated to detect compatible HloScanInstruction sum operations and rewrites them into xla.gpu.ext.cub_scan custom calls. Scan parameters such as vector length, row length, column length, scan kind (sum) and direction (forward/reverse) are passed through CubScanOptions in backend configuration.
+
+The EstimateCubScratchSize pass is updated to query cub::DeviceScan for the required scratch memory size for these custom calls via a FFI initialize function.
+
+This change also deprecates CubPrefixSum kernels in favor of generic scan kernels.
+
+PiperOrigin-RevId: 884297447"
+a5b08966e37c9cd92f045c4bdd0d121b2269ad29,Milica Makevic,2026-03-16 08:30:19+00:00,"PR #39051: [ROCm] Enable hlo_runner_main_gpu for ROCm
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/39051
+
+📝 Summary of Changes
+This PR enables the `hlo_runner_main_gpu` target for ROCm
+
+Copybara import of the project:
+
+--
+8cc8b2589fe249db4818cbcc523997575aac25b2 by Milica Makevic <Milica.Makevic@amd.com>:
+
+Enable hlo_runner_main_gpu for ROCm
+
+Merging this change closes #39051
+
+PiperOrigin-RevId: 884286107"
+70efae3a67faf5e9e4405b1d7f316d4da4e5c2d2,Adrian Kuegel,2026-03-16 07:05:25+00:00,"Ensure that tests use initialized DebugOptions
+
+PiperOrigin-RevId: 884253693"
+514c54e04e9d8a6605959224ea5cf303a614cc7a,A. Unique TensorFlower,2026-03-16 06:57:56+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 884250692"
+94a2c3f307a937d89cee1e08e26082544792d2bf,A. Unique TensorFlower,2026-03-16 06:20:52+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 884236830"
+b021724522e9a8a0c233147320becd676fb9e043,A. Unique TensorFlower,2026-03-16 03:57:55+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 884193544"
+44a652a7ef6ff88e6524b7770a3deb1556f16add,Alex Pivovarov,2026-03-14 23:59:43+00:00,"[XLA:GPU] Fix argument misalignment and remove default values in StreamExecutorGpuDevice constructor
+
+This PR fixes a bug in BuildLocalDevices where device metadata was being incorrectly assigned due to positional argument misalignment. It also hardens the StreamExecutorGpuDevice constructor by removing default values for trailing integer parameters, preventing similar issues in the future.
+
+PiperOrigin-RevId: 883779591"
